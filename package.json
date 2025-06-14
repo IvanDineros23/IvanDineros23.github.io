@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A personal portfolio project built with HTML, Tailwind CSS, and vanilla JavaScript.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

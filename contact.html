@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link href="src/css/base.css" rel="stylesheet">
+    <link href="src/css/styles.css" rel="stylesheet">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Interactive Background Canvas -->
+    <canvas id="background-canvas"></canvas>
+    
+    <header class="navbar-header">
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="logo"> </div>                <ul class="nav-list">
+                    <li><a href="index.html" class="link">Home</a></li>
+                    <li><a href="contact.html" class="link active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="contact-container">
+            <div class="contact-columns">
+                <!-- Contact Form Column -->
+                <div class="contact-form-column">
+                    <div class="form-card">
+                        <h1 class="form-title">Contact Me</h1>
+                        <form id="contact-form">
+                            <div class="mb-4">
+                                <label class="font-bold mb-2 block" for="name">Name</label>
+                                <input type="text" id="name" name="name" required class="form-input">
+                            </div>
+                            <div class="mb-4">
+                                <label class="font-bold mb-2 block" for="email">Email</label>
+                                <input type="email" id="email" name="email" required class="form-input">
+                            </div>
+                            <div class="mb-4">
+                                <label class="font-bold mb-2 block" for="message">Message</label>
+                                <textarea id="message" name="message" required class="form-textarea" style="height: 150px;"></textarea>
+                            </div>                            <div class="contact-form-button-container">
+                                <button type="submit" class="modern-button">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Social Media Column -->
+                <div class="social-media-column">
+                    <div class="social-card">
+                        <h2 class="social-title">Or message me through social media</h2>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/tebantooot/" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/tebantooot/" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ivan-james-dineros/" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/IvanDineros23" class="social-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Theme Toggle Floating Button -->
+    <button id="theme-toggle" class="fixed bottom-6 right-6 theme-toggle-btn px-6 py-3 rounded-lg shadow-xl z-[999] transition-all duration-300 transform hover:scale-105 flex items-center justify-center font-semibold">
+        <span id="theme-toggle-text">Dark Mode</span>
+        <div class="theme-tooltip">Click to switch theme</div>
+    </button>
+
+    <footer class="bg-white dark:bg-gray-800 text-center p-6 mt-8 transition-colors duration-300">
+        <div class="container mx-auto">
+            <p class="text-gray-600 dark:text-gray-400">&copy; <span id="current-year"></span> Ivan James Dineros. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>

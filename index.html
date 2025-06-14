@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan James Dineros | Portfolio</title>
+    <link href="src/css/base.css" rel="stylesheet">
+    <link href="src/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Interactive Background Canvas -->
+    <canvas id="background-canvas"></canvas>
+    
+    <header class="navbar-header">
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="logo"> </div>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="link active">Home</a></li>
+                    <li><a href="contact.html" class="link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container" style="padding-top: 3.5rem;">
+        <!-- Profile Image -->
+        <div class="flex justify-center mb-8 animate-fade-in">
+            <div class="profile-image-container">
+                <div class="profile-image-glow"></div>
+                <div class="profile-image">
+                    <img src="./DSC_0016.JPG" alt="Profile" class="w-full h-full object-cover rounded-full">
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile section -->
+        <section class="text-center animate-fade-in">
+            <h1 class="text-4xl font-bold mb-4 mt-4 name-title text-gray-900 dark:text-white">Hi! I'm Ivan James Dineros</h1>
+            <div class="profession-container mb-4">
+                <div class="profession-wrapper inline-block relative">
+                    <p class="profession-text text-lg text-emerald-600 dark:text-emerald-400 font-medium">
+                        <span class="text-element">Data Science</span>
+                        <span class="text-element">•</span>
+                        <span class="text-element">AI</span>
+                        <span class="text-element">•</span>
+                        <span class="text-element">Software Development</span>
+                        <span class="text-element">•</span>
+                        <span class="text-element">Web Engineering</span>
+                    </p>
+                    <div class="typing-cursor"></div>
+                </div>
+            </div>
+            <div class="mt-6 max-w-2xl mx-auto">
+                <div class="description-container profile-description-enhanced">
+                    <!-- Description text -->
+                    <div class="text-reveal-line description-text animate-fade-in" style="animation-delay: 0.5s;">
+                        <p class="text-gray-800 dark:text-gray-200 leading-relaxed mb-6">
+                            "I'm passionate about building intelligent systems that solve real-world problems, with a strong drive for continuous learning in data science and software development."
+                        </p>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="flex flex-col items-center mt-8 space-y-4 contact-info-enhanced">
+                        <div class="flex items-center text-gray-800 dark:text-gray-200">
+                            <span class="mr-2 text-sm">📍</span>
+                            <span class="text-sm">Rodriguez (Montalban), Rizal, Philippines</span>
+                        </div>
+                        <div class="flex items-center text-gray-800 dark:text-gray-200">
+                            <span class="mr-2 text-sm">📞</span>
+                            <span class="text-sm">(+63) 977 617 2809</span>
+                        </div>
+                        <div class="flex items-center text-gray-800 dark:text-gray-200">
+                            <span class="mr-2 text-sm">✉️</span>
+                            <span class="text-sm">jamesivandineros@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Button -->
+        <div class="text-center mt-12 mb-8 download-resume-enhanced">
+            <a href="./IVAN DINEROS RESUME.pdf" download class="modern-button">
+                 My Resume
+            </a>
+        </div>
+
+        <!-- About Me Section -->
+        <section class="mt-24 reveal-on-scroll about-me-section">
+            <h2 class="text-4xl font-bold text-center mb-16 stagger-item">About Me</h2>
+            <div class="max-w-6xl mx-auto px-6">
+                
+                <!-- Table-like Horizontal Cards with increased spacing -->
+                <div class="about-cards-container mb-12">
+                    <div class="about-cards-grid">
+                        <!-- Education Card -->
+                        <div class="about-card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="text-5xl mb-4">🎓</div>
+                            <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-white">Education</h3>
+                            <div class="text-sm text-gray-600 dark:text-gray-300 space-y-2">
+                                <p class="font-medium">BS Computer Science</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">TIP Quezon City</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">2021 - 2025</p>
+                            </div>
+                        </div>
+
+                        <!-- Technical Skills Card -->
+                        <div class="about-card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="text-5xl mb-4">💻</div>
+                            <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-white">Technical Skills</h3>
+                            <div class="text-sm text-gray-600 dark:text-gray-300 space-y-2">
+                                <p>Python, JavaScript, Java</p>
+                                <p>React, TailwindCSS</p>
+                                <p>MySQL, PostgreSQL</p>
+                                <p>Machine Learning & Data Analysis</p>
+                            </div>
+                        </div>
+
+                        <!-- Interests Card -->
+                        <div class="about-card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="text-5xl mb-4">🚀</div>
+                            <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-white">Interests</h3>
+                            <div class="text-sm text-gray-600 dark:text-gray-300 space-y-2">
+                                <p>Machine Learning & AI</p>
+                                <p>Web Development</p>
+                                <p>Data Analytics</p>
+                                <p>Tech Innovation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="mt-24 reveal-on-scroll featured-projects-section">
+            <h2 class="text-3xl font-bold text-center mb-10 stagger-item">Featured Projects</h2>
+            <div class="flex flex-col md:flex-row gap-6 justify-center items-stretch max-w-7xl mx-auto px-4 md:px-6 py-2">
+                <!-- Project Card 1 -->
+                <div class="featured-project-card bg-white dark:bg-gray-800 rounded-lg shadow overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 stagger-item flex-1 max-w-2xl mx-auto w-full">
+                    <div class="flex flex-col h-full">
+                        <div class="relative h-60 md:h-72 overflow-hidden">
+                            <img src="./travelmate.png" alt="Project 1" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                        </div>
+                        <div class="flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-gray-900 dark:text-white">TravelMate</h3>
+                                <p class="text-gray-600 dark:text-gray-300">Travelmate is a smart travel recommender system designed for Tanay, Rizal. It uses a hybrid approach that combines Neural Collaborative Filtering and Content-Based Filtering to provide personalized destination suggestions based on user preferences and behavior.</p>
+                            </div>
+                            <div class="text-center">
+                                <a href="contact.html" class="modern-button">
+                                    Contact Me
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="featured-project-card bg-white dark:bg-gray-800 rounded-lg shadow overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 stagger-item flex-1 max-w-2xl mx-auto w-full">
+                    <div class="flex flex-col h-full">
+                        <div class="relative h-60 md:h-72 overflow-hidden">
+                            <img src="./escalonadental.png" alt="Project 2" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                        </div>
+                        <div class="flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-gray-900 dark:text-white">Escalona Dental Clinic</h3>
+                                <p class="text-gray-600 dark:text-gray-300">SmileCare is a web-based system designed for Escalona Dental Clinic that streamlines appointment scheduling and patient management. It simplifies clinic operations by allowing staff to manage bookings, records, and patient information efficiently.</p>
+                            </div>
+                            <div class="text-center">
+                                <a href="contact.html" class="modern-button">
+                                    Contact Me
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills and Tools Used Section -->
+        <section class="mt-16 reveal-on-scroll skills-tools-section">
+            <h2 class="text-4xl font-bold text-center mb-12 stagger-item">Skills and Tools Used</h2>
+            
+            <div class="max-w-7xl mx-auto px-6">
+                <!-- Programming/Library Skills -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold text-center mb-8 text-gray-800 dark:text-white stagger-item">Programming/Library Skills</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
+                        <!-- HTML5 -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/html.png" alt="HTML5" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">HTML5</h4>
+                        </div>
+
+                        <!-- CSS3 -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/css.png" alt="CSS3" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">CSS3</h4>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/js.png" alt="JS" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">JavaScript</h4>
+                        </div>
+
+                        <!-- PHP -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/php.png" alt="PHP" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">PHP</h4>
+                        </div>
+
+                        <!-- Java -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/java.png" alt="JAVA" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">Java</h4>
+                        </div>
+
+                        <!-- Python -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/python.png" alt="PYTHON" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">Python</h4>
+                        </div>
+
+                        <!-- Flutter -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/flutter.png" alt="Flutter" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">Flutter</h4>
+                        </div>
+
+                        <!-- PHPMyAdmin -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/phpmyadmin.png" alt="PHPMYADMIN" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white text-sm">PHPMyAdmin</h4>
+                        </div>
+
+                        <!-- MySQL -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                               <img src="src/assets/mysql.png" alt="MYSQL" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">MySQL</h4>
+                        </div>
+
+                        <!-- PostgreSQL -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/postgresql.png" alt="POSTGRESQL" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">PostgreSQL</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Design -->
+                <section class="pt-20 pb-12 reveal-on-scroll skills-tools-section">
+                    <h3 class="text-2xl font-bold text-center mb-8 text-gray-800 dark:text-white stagger-item">Tools & Design</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
+                        <!-- Visual Studio Code -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/vscode.png" alt="VSCODE" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white text-sm">Visual Studio Code</h4>
+                        </div>
+
+                        <!-- GitHub -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/github.png" alt="GITHUB" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">GitHub</h4>
+                        </div>
+
+                        <!-- Photoshop -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/photoshop.png" alt="PHOTOSHOP" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">Photoshop</h4>
+                        </div>
+
+                        <!-- Premiere Pro -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/premierepro.png" alt="PremierePro" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">Premiere Pro</h4>
+                        </div>
+
+                        <!-- Google Colab -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/googlecolab.png" alt="Google Colab" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white text-sm">Google Colab</h4>
+                        </div>
+
+                        <!-- Kaggle -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/kaggle.png" alt="Kaggle" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">Kaggle</h4>
+                        </div>
+
+                        <!-- Jupyter Notebook -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/jupyternb.png" alt="Jupyter Notebook" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white text-sm">Jupyter Notebook</h4>
+                        </div>
+
+                        <!-- Canva -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/canva.png" alt="CANVA" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">Canva</h4>
+                        </div>
+
+                        <!-- XAMPP -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                               <img src="src/assets/xampp.png" alt="XAMPP" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">XAMPP</h4>
+                        </div>
+
+                        <!-- Google Workspace -->
+                        <div class="skill-tech-card bg-white dark:bg-gray-800 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 stagger-item">
+                            <div class="tech-icon mb-4">
+                                <img src="src/assets/googlworkspace.png" alt="Googleworkspace" class="tech-logo">
+                            </div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white text-sm">Google Workspace</h4>
+                        </div>
+                    </div>
+                </section>
+            </div
+            
+            <!-- Contact section -->
+            <div class="text-center mt-12 pt-8 border-t border-gray-200 dark:border-gray-700 stagger-item">
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                    Always excited to collaborate on innovative projects!
+                </p>
+                <a href="contact.html" class="modern-button">
+                    Let's Connect
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white dark:bg-gray-800 text-center p-6 mt-8 animate-fade-in delay-1400 transition-colors duration-300">
+        <div class="container mx-auto">
+            <div class="flex flex-col items-center space-y-4">
+                <p class="text-gray-600 dark:text-gray-400">&copy; <span id="current-year"></span> Ivan James Dineros. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Floating Button -->
+    <button id="theme-toggle" class="fixed bottom-6 right-6 theme-toggle-btn px-6 py-3 rounded-lg shadow-xl z-[999] transition-all duration-300 transform hover:scale-105 flex items-center justify-center font-semibold">
+        <span id="theme-toggle-text">Dark Mode</span>
+        <div class="theme-tooltip">Click to switch theme</div>
+    </button>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
