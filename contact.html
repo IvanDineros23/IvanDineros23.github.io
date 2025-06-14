@@ -30,8 +30,16 @@
                 <!-- Contact Form Column -->
                 <div class="contact-form-column">
                     <div class="form-card">
-                        <h1 class="form-title">Contact Me</h1>
-                        <form id="contact-form">
+                        <h1 class="form-title">Contact Me</h1>                        <form id="contact-form" action="https://formspree.io/f/jamesivandineros@gmail.com" method="POST" onsubmit="return showConfirmation(event);">
+                            <!-- Honeypot to prevent spam -->
+                            <input type="text" name="_honey" style="display:none">
+                            
+                            <!-- Disable captcha -->
+                            <input type="hidden" name="_captcha" value="false">
+                            
+                            <!-- Success page after submission -->
+                            <input type="hidden" name="_next" value="https://ivandineros23.github.io/PORTFOLIO/contact.html">
+                            
                             <div class="mb-4">
                                 <label class="font-bold mb-2 block" for="name">Name</label>
                                 <input type="text" id="name" name="name" required class="form-input">
@@ -43,7 +51,8 @@
                             <div class="mb-4">
                                 <label class="font-bold mb-2 block" for="message">Message</label>
                                 <textarea id="message" name="message" required class="form-textarea" style="height: 150px;"></textarea>
-                            </div>                            <div class="contact-form-button-container">
+                            </div>
+                            <div class="contact-form-button-container">
                                 <button type="submit" class="modern-button">
                                     Send Message
                                 </button>
