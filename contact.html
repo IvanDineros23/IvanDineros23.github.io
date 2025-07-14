@@ -30,7 +30,7 @@
                 <!-- Contact Form Column -->
                 <div class="contact-form-column">
                     <div class="form-card">
-                        <h1 class="form-title">Contact Me</h1>                        <form id="contact-form" action="https://formspree.io/f/jamesivandineros@gmail.com" method="POST" onsubmit="return showConfirmation(event);">
+                        <h1 class="form-title">Contact Me</h1><form id="contact-form" action="https://formspree.io/f/mblkrqaw" method="POST">
                             <!-- Honeypot to prevent spam -->
                             <input type="text" name="_honey" style="display:none">
                             
@@ -38,7 +38,7 @@
                             <input type="hidden" name="_captcha" value="false">
                             
                             <!-- Success page after submission -->
-                            <input type="hidden" name="_next" value="https://ivandineros23.github.io/PORTFOLIO/contact.html">
+                            <input type="hidden" name="_next" value="https://yourportfolio.com/thank-you.html">
                             
                             <div class="mb-4">
                                 <label class="font-bold mb-2 block" for="name">Name</label>
@@ -53,7 +53,7 @@
                                 <textarea id="message" name="message" required class="form-textarea" style="height: 150px;"></textarea>
                             </div>
                             <div class="contact-form-button-container">
-                                <button type="submit" class="modern-button">
+                                <button type="button" class="modern-button" onclick="showConfirmation()">
                                     Send Message
                                 </button>
                             </div>
@@ -102,5 +102,25 @@
     </footer>
 
     <script src="src/js/main.js"></script>
+    <script>
+function showConfirmation() {
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+    
+    if (!name || !email || !message) {
+        alert('Please fill in all fields');
+        return false;
+    }
+    
+    const confirmSend = confirm('Are you sure you want to send this message?');
+    
+    if (confirmSend) {
+        // Direct submit without preventDefault
+        document.getElementById('contact-form').submit();
+        alert('Message sent successfully! Thank you for contacting me.');
+    }
+}
+</script>
 </body>
 </html>
